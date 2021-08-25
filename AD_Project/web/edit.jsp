@@ -11,29 +11,62 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Edit Course</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="${pageContext.request.contextPath}/resource/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Edit Course</h1>
-        
-        <c:set var="c" value="${requestScope['data']}"/>
-        <form action="CourseControl?ac=doUpdate" method="POST">
-            <label for="fname">ID:</label><br>
-            <input type="text" name="txtID" value="${c.id}"><br>
-            <label for="fname">Name:</label><br>
-            <input type="text" name="txtName" value="${c.name}"><br>
-            <label for="fname">Description:</label><br>
-            <input type="text" name="txtDesc" value="${c.desc}"><br>
-            <label for="fname">Content:</label><br>
-            <input type="text" name="txtContent" value="${c.content}"><br>
-            <label for="fname">Schedule:</label><br>
-            <input type="text" name="txtSchedule" value="${c.schedule}"><br>
-            <label for="fname">Category:</label><br>
-            <input type="text" name="txtCategory" value="${c.category}"><br>
-            <label for="fname">Trainer:</label><br>
-            <input type="text" name="txtTrainer" value="${c.trainer}"><br>
-            <br>
-            <br>
-            <input type="submit" value="Update">
-        </form>
+        <div class="container">
+            <h1>Edit Course Form:</h1>
+            <c:set var="c" value="${requestScope['data']}"/>
+            <div class="card">
+                <div class="card-body">
+                    <form action="CourseControl?ac=doUpdate" method="POST">
+                        <div class="form-group row">
+                            <label for="id" class="col-sm-2 col-form-label">ID:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" name="txtId" value="${c.id}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label">Course Name:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" name="txtName" value="${c.name}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="desc" class="col-sm-2 col-form-label">Course Description:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" name="txtDesc" value="${c.desc}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="content" class="col-sm-2 col-form-label">Course Content:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" name="txtContent" value="${c.content}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="schedule" class="col-sm-2 col-form-label">Course Schedule:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" name="txtSchedule" value="${c.schedule}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="category" class="col-sm-2 col-form-label">Course Category:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" name="txtCategory" value="${c.category}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="trainer" class="col-sm-2 col-form-label">Course Trainer:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" name="txtTrainer" value="${c.trainer}">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

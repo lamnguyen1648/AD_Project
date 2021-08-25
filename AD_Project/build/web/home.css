@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 25, 2021, 10:49:48 AM
+    Author     : lamsu
+*/
+body{
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0;
+}
+
+.header{
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(245, 199, 147);
+}
+
+.logoPage img{
+    width: 65px;
+    height: 35px;
+}
+
+.btnLogin{
+    padding: 2px 2px;
+}
+
+.btnLogin button{
+    border: 1px solid black;
+    width: 75px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(236, 103, 14);
+    padding: auto;
+}
+
+.carousel{
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 0.5px solid black;
+}
+
+.carousel img{
+    width: 1800px;
+    height: 500px;
+}
+
+.mainContent{
+    margin: 15px 50px;
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+.mainContent h3, h4{
+    background-color: silver;
+    border-top: 2px solid black;
+    font-size: 40px;
+}
+
+.card-link{
+    font-size: 30px;
+}
+
+.card-body{
+    font-size: 30px;
+}
+
+.footer{
+    margin-top: 35px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(245, 199, 147);
+    color: black;
+    text-align: center;
+}
